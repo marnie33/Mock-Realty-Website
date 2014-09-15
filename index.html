@@ -1,0 +1,150 @@
+<!--Created by: Cy <3
+(aka: Marnie Tisdale)
+Date Created: 9/9/14
+Last Modified: 9/12/14
+
+Summary: Simple mockup of a realtor's personal listings site-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700|Merriweather+Sans:400,800' rel='stylesheet' type='text/css'>
+    <!--^Google fonts import library-->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--^bootstrap css for the style portion-->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <!--^jQuery css import-->
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <!--^my stylesheet for "homegrown" css-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!--^ jQuery import-->
+    <script src="jquery-ui.js"></script>
+    <!--^ jQuery UI manipulation import-->
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <!--^ bootstraps js file import-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--^ my JavaScript/jQuery file for index.html-->
+    
+</head>
+    <body>
+        
+        <!--header (holds title bar)-->
+        <div class="header">
+            <div class="container">
+                <div class="pull-left"><div id="JTpic"><img src="http://upload.wikimedia.org/wikipedia/commons/6/64/ChrisCottrellHeadshot.jpeg"></div><br>
+                <div id="realtorName">John Thomas</div>
+                </div><!--end left side header-->
+                <div class="pull-right">
+                    <div id="logo"><img src="http://upload.wikimedia.org/wikipedia/commons/9/90/Wiki-tech-logo-js.svg"></div><br>
+                    <div id="realtorInfo">
+                    Jenson-Smithson Realty</div><br>
+                    <div id="realtorInfo">
+                    555-555-5555<br>
+                    <a href="mailto:fakeemail@fake.fake">fakeemail@fake.fake</a></div><br>
+                </div><!--end right side header-->
+            </div><!--end header container-->
+        </div><!--end header-->
+        
+        <!--main section of page-->
+        <div class="jumbotron" id="jumbo">
+            <div class="container">
+                <div class="row">
+                    <!--1st column-->
+                    <div class="col-md-3">
+                        <div class="ad" id="ad1A" onclick="window.location.replace('ad1A.html')">
+                            <div id="pic"><img src="https://c1.staticflickr.com/5/4035/4629169207_05751fefb6_b.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            3 bdr 2 bath pool<br>
+                            starting at $120,000<br>
+                            Chandler and Alma School<br>
+                            </div>
+                        </div><!--end ad 1A-->
+                        <br>
+                        <div class="ad" id="ad1B" onclick="window.location.replace('ad1B.html')"> 
+                            <div id="pic"><img src="https://c2.staticflickr.com/4/3460/3709571684_c3f1f9c2d8_z.jpg?zz=1" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            6 bdr 3 bath pool<br>
+                            starting at $750,000<br>
+                            Chandler and Dobson<br>
+                            </div>
+                        </div><!--end ad 1B-->
+                    </div><!--end col 1-->
+                    
+                    <!--2nd column-->
+                    <div class="col-md-3">
+                        <div class="ad" onclick="window.location.replace('ad2A.html')">
+                            <div id="pic"><img src="https://c2.staticflickr.com/6/5214/5473969626_66a4f6730a_z.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            4 bdr 2 bath pool<br>
+                            starting at $240,000<br>
+                            Gilbert and Southern<br>
+                            </div>
+                        </div><!--end ad 2A-->
+                        <br>
+                        <div class="ad" onclick="window.location.replace('ad2B.html')">
+                            <div id="pic"><img src="http://farm1.staticflickr.com/45/156700293_fed0240cc2_b.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            4 bdr 1 bath<br>
+                            starting at $130,000<br>
+                            McDowell and Scottsdale<br>
+                            </div>
+                        </div><!--end ad 2B-->
+                    </div><!--end col2-->
+                    
+                    <!--3rd column-->
+                    <div class="col-md-3">
+                        <div class="ad" onclick="window.location.replace('ad3A.html')">
+                            <div id="pic"><img src="http://upload.wikimedia.org/wikipedia/commons/0/03/House_for_Sale_-_Upton_Crescent_-_geograph.org.uk_-_802924.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            3 bdr 2 bath pool<br>
+                            starting at $220,000<br>
+                            Lindsey and Baseline<br>
+                            </div>
+                        </div><!--end ad 3A-->
+                        <br>
+                        <div class="ad" onclick="window.location.replace('ad3B.html')">
+                            <div id="pic"><img src="https://c2.staticflickr.com/4/3779/9053134893_e9f55531e1_b.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            2 bdr 1 bath<br>
+                            starting at $53,000<br>
+                            McDowell and 44th ST<br>
+                            </div>
+                        </div><!--end ad 3B-->
+                    </div><!--end col 3-->
+                    
+                    <!--4th column-->
+                    <div class="col-md-3">
+                        <div class="ad" onclick="window.location.replace('ad4A.html')">
+                            <div id="pic"><img src="http://s0.geograph.org.uk/geophotos/03/14/37/3143713_c567b065.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            5 bdr 2 1/2 bath<br>
+                            starting at $520,000<br>
+                            Camelback and 7th ST<br>
+                            </div>
+                        </div><!--end ad 4A-->
+                        <br>
+                            <div class="ad" onclick="window.location.replace('ad4B.html')">
+                            <div id="pic"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mid-City_New_Orleans_Iberville_Street_House_For_Sale.jpg/480px-Mid-City_New_Orleans_Iberville_Street_House_For_Sale.jpg" width="200px" height="250px"></div><br>
+                            <div id="text">
+                            3 bdr 2 bath pool<br>
+                            starting at $180,000<br>
+                            Chandler and Arizona Ave<br>
+                            </div>
+                        </div><!--end ad 4B-->
+                    </div><!--end col 4-->
+                    
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end jumbo tron-->    
+        
+        <!--footer-->
+       <div class="footer">
+            <div class="container">
+                <div id="sig" class="pull-left">By: Cy &lt;3</div>
+                <div id="copy" class="pull-right">2014 &copy;</div>
+            </div>
+        </div>  
+    </body>
+</html>
