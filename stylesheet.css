@@ -1,0 +1,230 @@
+.header {
+    margin-top: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    background-image: url(https://c2.staticflickr.com/8/7288/8737751509_4cf025664d.jpg);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    color: black;
+}
+
+body {
+    background-image: 
+        linear-gradient(to bottom, skyblue, paleturquoise, skyblue, deepskyblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#jumbo {
+    background-color: transparent;
+}
+
+.footer {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://c2.staticflickr.com/8/7288/8737751509_4cf025664d.jpg);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: black;
+}
+
+#pic {
+    width: 202px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+.ad {
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    background-image: url(http://fc00.deviantart.net/fs47/i/2009/190/8/1/Blue_Water_II_by_ambersstock.jpg);
+    border: 2px solid black;
+    box-shadow: 3px 3px 7px 3px #333333;
+}
+
+#text {
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+    background-color: #FFFFCC;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+#JTpic {
+    border: 2px solid black;
+    box-shadow: 3px 3px 7px 3px #333333;
+}
+
+#realtorName {
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px 3px #333333;
+    background-image: url(http://fc00.deviantart.net/fs47/i/2009/190/8/1/Blue_Water_II_by_ambersstock.jpg);
+    padding: 5px;
+    text-align: center;
+}
+
+#realtorInfo {
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px 3px #333333;
+    background-image: url(http://fc00.deviantart.net/fs47/i/2009/190/8/1/Blue_Water_II_by_ambersstock.jpg);
+    padding: 5px;
+    text-align: center;
+}
+
+#logo {
+    margin: 10px;
+}
+
+#picdetails {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+    width: 402px;
+}
+
+#textdetails {
+    width: 639px;
+    height: 650px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+    background-color: #FFFFCC;
+    padding: 10px;
+}
+
+#details {
+    background-image: url(http://fc00.deviantart.net/fs47/i/2009/190/8/1/Blue_Water_II_by_ambersstock.jpg);
+    border: 2px solid black;
+    box-decoration-break: 3px 3px 7px 3px #333333;
+    height: 682px;
+    width: auto;
+    padding: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+#propdetails {
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+    background-color: paleturquoise;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#propdetails td {
+    padding: 5px;
+    border: 1px solid #333333;
+}
+
+#homePhotos {
+    padding: 5px;
+}
+
+#homePic {
+    display: inline-block;
+    border: 1px solid black;
+    width: 152px;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+#title {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+#dialogoverlay {
+    display: none;
+    opacity: .9;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+#dialogbox {
+    display: none;
+    position: fixed;
+    background: #1c1c1c;
+    border-radius: 7px;
+    width: 600px;
+    z-index: 10;
+    box-shadow: 3px 3px 10px 3px #585858;
+}
+
+#dialogbox div {
+    background: skyblue;
+    margin: 8px;
+    padding: 3px;
+}
+
+#dialogbox div #dialogboxhead {
+    background: #4ADC6F;
+    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+#dialogbox div #dialogboxbody {
+    background: #FFFFCC;
+    padding: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+#dialogbox div #dialogboxfoot {
+    background: #4ADC6F;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #333333;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+#standardbtn {
+    background-color: #FFFFCC;
+    font-family: 'Merriweather Sans', sans-serif;
+    box-shadow: 2px 2px 5px 2px #333333;
+    border: 2px solid black;
+}
+
+#boxcalc {
+    background-color: transparent;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#boxcalc td {
+    padding: 2px;
+}
+
+#sub {
+    font-size: 9px;
+}
+
+#boxbtn {
+    border: 2px solid black;
+    background-color: #FFFFCC;
+    margin: 10px;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+
+#okbtn {
+    border: 2px solid black;
+    background-color: #FFFFCC;
+    box-shadow: 2px 2px 5px 2px #333333;
+    font-weight: bold;
+}
