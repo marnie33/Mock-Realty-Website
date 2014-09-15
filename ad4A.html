@@ -1,0 +1,168 @@
+<!--Created by: Cy <3
+(aka: Marnie Tisdale)
+Date Created: 9/10/14
+Last Modified: 9/15/14
+
+Summary: ad 4A's details page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700|Merriweather+Sans:400,800' rel='stylesheet' type='text/css'>
+    <!--^Google fonts import library-->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--^bootstrap css for the style portion-->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <!--^jQuery css import-->
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <!--^my stylesheet for "homegrown" css-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!--^ jQuery import-->
+    <script src="jquery-ui.js"></script>
+    <!--^ jQuery UI manipulation import-->
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <!--^ bootstraps js file import-->
+    <script type="text/javascript" src="ad4A.js"></script>
+    <!--^ my JavaScript/jQuery file for ad4A.html-->
+    
+</head>
+    <body>
+        <!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="pull-left"><div id="JTpic"><img src="http://upload.wikimedia.org/wikipedia/commons/6/64/ChrisCottrellHeadshot.jpeg"></div><br>
+                <div id="realtorName">John Thomas</div>
+                </div><!--end left side header-->
+                <div class="pull-right">
+                    <div id="logo"><img src="http://upload.wikimedia.org/wikipedia/commons/9/90/Wiki-tech-logo-js.svg"></div><br>
+                    <div id="realtorInfo">
+                    Jenson-Smithson Realty</div><br>
+                    <div id="realtorInfo">
+                    555-555-5555<br>
+                    <a href="mailto:fakeemail@fake.fake">fakeemail@fake.fake</a></div><br>
+                </div><!--end right side header-->
+            </div><!--end header container-->
+        </div><!--end header-->
+        
+         <!--main section of page-->
+        <div class="jumbotron" id="jumbo">
+            <div class="container">
+                <div class="row">
+                    <div id="details">
+                        
+                    <!--left side for main home picture-->
+                    <div class="col-md-5">
+                        <div id="picdetails">
+                            <img src="http://s0.geograph.org.uk/geophotos/03/14/37/3143713_c567b065.jpg" width="400px" height="650px">
+                        </div>
+                    </div><!--end main home picture-->
+                        
+                    <!--right side for home details-->
+                    <div class="col-md-7">
+                        <div id="textdetails" class="pull-right">
+                            <!--button to calculate mortgage payments-->
+                            <div id="calculate" class="pull-right"><button id="standardbtn" onclick="Alert.render()">Payment Estimates</button></div>
+                        <!--home address = title-->
+                        <div id="title">122 Camelback Rd<br>
+                        Phoenis AZ 85024</div><br><!--ends title-->
+                            <!--table w/ basic home details-->
+                            <table id="propdetails">
+                            <thead>The Basics:</thead>
+                            <tr>
+                                <td>Listed Price</td>
+                                <td></td>
+                                <td>$520,000</td>
+                            </tr>
+                            <tr>
+                                <td>Bedrooms</td>
+                                <td>5</td>
+                                <td>Cieling fans, tall windows, Master has wood floors, jacuzzi tub and walk in closet</td>
+                            </tr>
+                            <tr>
+                                <td>Bathrooms</td>
+                                <td>2 1/2</td>
+                                <td>full size shower/bath, and one 1/2 bath off living room area</td>
+                            </tr>
+                            <tr>
+                                <td>Kitchen</td>
+                                <td>Y</td>
+                                <td>Spacious kitchen, lots of storage, room for double stoves, water filtration</td>
+                            </tr>
+                            <tr>
+                                <td>Square Footage</td>
+                                <td></td>
+                                <td>7,200 sqft</td>
+                            </tr>
+                            <tr>
+                                <td>Year Built</td>
+                                <td></td>
+                                <td>2006</td>
+                            </tr>
+                        </table><!--ends table-->
+                            <br>
+                            <!--text section with more detailed details, and email hotlink-->
+                            <div id="homeDetails">
+                                This is a perfect home for a family to grow up in. In a top ranked school district, this home is also near all sorts of activities for parents and for children. This home has a dining room, a breakfast nook, a game room, an extended living/family room, and a front entry way. This home has a 3 car garage. Call or <a href="mailto:fakeemail@fake.fake">email</a> me today for more information, or to schedule a tour!
+                            </div><!--ends text section-->
+                            <br>
+                            <!--pictures of home & pool (where applicable)-->
+                            <div id="homePhotos">
+                                <div id="homePic"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Empty_LEGO_Room_Build_Table.jpg/682px-Empty_LEGO_Room_Build_Table.jpg" height="100" width="150"></div> &nbsp;
+                                <div id="homePic"><img src="https://c1.staticflickr.com/1/57/226454078_cfd25d563a_z.jpg?zz=1" height="100" width="150"></div> &nbsp;
+                                <div id="homePic"><img src="https://c2.staticflickr.com/2/1174/938633005_ad182ddf49_z.jpg?zz=1" height="100" width="150"></div> &nbsp;
+                            </div><!--ends pictures-->
+                            <!--back button returns user to home page-->
+                            <button class="pull-right" id="standardbtn" onclick="window.location.replace('index.html')">Back</button>
+                        </div><!--ends text details section/right side of main page-->
+                    </div><!--ends left side of page-->
+                    </div><!--ends right/left side of page, aka details section-->
+                    
+                    <!--these divs hold the custom made dialog box-->
+                        <div id="dialogoverlay"></div><!--controls page bg when box is in effect-->
+                        <div id="dialogbox">
+                            <div>
+                                <div id="dialogboxhead"></div><!--box header-->
+                                <div id="dialogboxbody"><!--dialog box body-->
+                                    <table id="boxcalc"><!--contains calculator-->
+                                        <tr>
+                                            <td><label for="principal">Loan Principal:</label></td>
+                                            <td><input name="principal" id="principal" type="text" value="$520,000.00"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="rate">Interest Rate:</label></td>
+                                            <td><input name="rate" id="rate" type="text"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="term">Loan Term (in years):</label></td>
+                                            <td><input name="term" id="term" type="text"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td><!--on click, calculates what monthly payments should be-->
+                                            <td><button id="boxbtn" onclick="Calc.payments()">Calculate</button><button id="boxbtn" onclick="Clear.cleared()">Clear Fields</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="pmt">Monthly Payments:</label></td>
+                                            <td><input id="pmt" name="pmt" type="text"/></td>
+                                        </tr>
+                                    </table>
+                                    <p id="sub" >*This is an estimate only, results may vary based on personal credit and other factors</p> 
+                                </div><!--box body-->
+                                <div id="dialogboxfoot"></div><!--box footer-->
+                            </div>
+                        </div><!--end dialog box-->
+                    
+                </div><!--ends row-->
+            </div><!--ends container-->
+        </div><!--ends jumobtron-->
+        
+        <!--footer-->
+       <div class="footer">
+            <div class="container">
+                <div id="sig" class="pull-left">By: Cy &lt;3</div>
+                <div id="copy" class="pull-right">2014 &copy;</div>
+            </div>
+        </div> 
+    </body>
+</html>
